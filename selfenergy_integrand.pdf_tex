@@ -1,0 +1,87 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'selfenergy-integrand.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{613.56535156bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.643323)%
+    \put(0,0){\includegraphics[width=\unitlength]{plots/selfenergy-integrand.pdf}}%
+    \put(0.23812411,0.62748002){\makebox(0,0)[lb]{\smash{Integrand of the damped part of the selfenergy integal
+The lines indicate the integration domains for the marked values of p/k}}}%
+    \put(0.80446232,0.60009908){\makebox(0,0)[lb]{\smash{f}}}%
+    \put(0.69288219,0.5487598){\makebox(0,0)[lb]{\smash{Im(1/eps)/k}}}%
+    \put(0.70620791,0.52594235){\makebox(0,0)[lb]{\smash{delta peak}}}%
+    \put(0.763659,0.50312489){\makebox(0,0)[lb]{\smash{p=1}}}%
+    \put(0.763659,0.48030743){\makebox(0,0)[lb]{\smash{p=2}}}%
+    \put(0.763659,0.45748998){\makebox(0,0)[lb]{\smash{p=3}}}%
+    \put(0.07334297,0.03878967){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.20926981,0.03878967){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.34519665,0.03878967){\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.48112349,0.03878967){\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0.61705033,0.03878967){\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.75297717,0.03878967){\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.88890401,0.03878967){\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.40553904,0.00684524){\makebox(0,0)[lb]{\smash{Wave vector k/k}}}%
+    \put(0.55633993,-0){\makebox(0,0)[lb]{\smash{f}}}%
+    \put(0.0470214,0.06845237){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.0470214,0.17341266){\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.0470214,0.27837295){\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.0470214,0.38333325){\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.0470214,0.48829354){\makebox(0,0)[lb]{\smash{8}}}%
+    \put(0.03561267,0.59325384){\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.01584298,0.2664492){\rotatebox{90}{\makebox(0,0)[lb]{\smash{Frequency }}}}%
+    \put(0.01584298,0.36846621){\rotatebox{90}{\makebox(0,0)[lb]{\smash{ω}}}}%
+    \put(0.01584298,0.38411884){\rotatebox{90}{\makebox(0,0)[lb]{\smash{/E}}}}%
+    \put(0.02268822,0.40440372){\rotatebox{90}{\makebox(0,0)[lb]{\smash{f}}}}%
+    \put(0.97226922,0.06845237){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.97226922,0.17341266){\makebox(0,0)[lb]{\smash{0.2}}}%
+    \put(0.97226922,0.27837295){\makebox(0,0)[lb]{\smash{0.4}}}%
+    \put(0.97226922,0.38333325){\makebox(0,0)[lb]{\smash{0.6}}}%
+    \put(0.97226922,0.48829354){\makebox(0,0)[lb]{\smash{0.8}}}%
+    \put(0.97226922,0.59325384){\makebox(0,0)[lb]{\smash{1}}}%
+  \end{picture}%
+\endgroup%

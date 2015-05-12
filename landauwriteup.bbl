@@ -1,0 +1,188 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Boyd and Sanderson(2003)]{boydsanderson}
+T.J.M. Boyd and J.J. Sanderson.
+\newblock \emph{The physics of plasmas}.
+\newblock Cambridge University Press, 2003.
+\newblock ISBN 9780521452908.
+\newblock URL \url{http://books.google.ie/books?id=DDJkQgAACAAJ}.
+
+\bibitem[Bittencourt(2004)]{bittencourtplasmafundamentals}
+J.A. Bittencourt.
+\newblock \emph{Fundamentals of Plasma Physics}.
+\newblock Springer, 2004.
+\newblock ISBN 9780387209753.
+\newblock URL \url{http://books.google.ie/books?id=qCA64ys-5bUC}.
+
+\bibitem[Manfredi(2005)]{howtomodelqmplasmas}
+Giovanni Manfredi.
+\newblock How to model quantum plasmas.
+\newblock \emph{Fields Institute Communications Series}, 46:\penalty0 263,
+  2005.
+\newblock URL \url{arxiv.org/abs/quant-ph/0505004}.
+
+\bibitem[Vlasov(1938)]{vlasov}
+A.~Vlasov.
+\newblock On vibration properties of electron plasma [sic].
+\newblock \emph{JETP}, 8:\penalty0 291, 1938.
+
+\bibitem[Landau(1946)]{Landaudamping1946}
+L.D. Landau.
+\newblock On the vibrations of the electronic plasma.
+\newblock \emph{JETP}, 16:\penalty0 574, 1946.
+\newblock Translated from Russian by E.~Lifschitz.
+
+\bibitem[Thorne and Blandford(2012-2013)]{caltechbook}
+Kip~S. Thorne and Roger~D. Blandford.
+\newblock Applications of classical physics.
+\newblock Unpublished textbook from lecture notes, 2012-2013.
+\newblock URL \url{http://www.pma/caltech.edu/Courses/ph136/yr2012/}.
+
+\bibitem[gsl()]{gslsite}
+URL \url{www.gnu.org/software/gsl}.
+\newblock GNU scientific library documentation.
+
+\bibitem[Fad()]{Faddeevapackage}
+URL \url{http://ab-initio.mit.edu/wiki/index.php/Faddeeva_Package}.
+\newblock Faddeeva package documentation.
+
+\bibitem[Malmberg and Wharton(1964)]{PhysRevLett.13.184}
+J.~H. Malmberg and C.~B. Wharton.
+\newblock Collisionless damping of electrostatic plasma waves.
+\newblock \emph{Phys. Rev. Lett.}, 13:\penalty0 184--186, Aug 1964.
+\newblock \doi{10.1103/PhysRevLett.13.184}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.13.184}.
+
+\bibitem[Malmberg and Wharton(1966)]{PhysRevLett.17.175}
+J.~H. Malmberg and C.~B. Wharton.
+\newblock Dispersion of electron plasma waves.
+\newblock \emph{Phys. Rev. Lett.}, 17:\penalty0 175--178, Jul 1966.
+\newblock \doi{10.1103/PhysRevLett.17.175}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.17.175}.
+
+\bibitem[Press et~al.(1992)Press, Teukolsky, Vetterling, and B.P.]{nr}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and Flannery B.P.
+\newblock \emph{Numerical recipes in C: The art of scientific computing}.
+\newblock Cambridge University Press, New York, 2nd edition, 1992.
+\newblock URL \url{apps.nrbook.com/c/index.html}.
+
+\bibitem[Ashcroft and Mermin(1976)]{asc87}
+Neil~W. Ashcroft and N.~David Mermin.
+\newblock \emph{Solid State Physics}.
+\newblock Saunders College, Philadelphia, 1976.
+
+\bibitem[Pines(1999)]{pineselementary}
+D.~Pines.
+\newblock \emph{Elementary Excitations in Solids: Lectures on Protons,
+  Electrons, and Plasmons}.
+\newblock Advanced Book Program Series. Advanced Book Program, Perseus Books,
+  1999.
+\newblock ISBN 9780738201153.
+
+\bibitem[Arista and Brandt(1984)]{finiteT-lindhard}
+N\'estor~R. Arista and Werner Brandt.
+\newblock Dielectric response of quantum plasmas in thermal equilibrium.
+\newblock \emph{Phys. Rev. A}, 29:\penalty0 1471--1480, Mar 1984.
+\newblock \doi{10.1103/PhysRevA.29.1471}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevA.29.1471}.
+
+\bibitem[Lindhard(1954)]{Lindhard}
+J.~Lindhard.
+\newblock On the properties of a gas of charged particles.
+\newblock \emph{Det Kongelige Danske Videnskabernes Selskab}, 28:\penalty0
+  1--58, 1954.
+
+\bibitem[Mahan(2000)]{mahanmany}
+G.D. Mahan.
+\newblock \emph{Many Particle Physics}.
+\newblock Physics of Solids and Liquids. Springer, 2000.
+\newblock ISBN 9780306463389.
+\newblock URL \url{http://books.google.ie/books?id=xzSgZ4-yyMEC}.
+
+\bibitem[Quinn and Ferrell(1958)]{QuinnFerrell}
+John~J. Quinn and Richard~A. Ferrell.
+\newblock Electron self-energy approach to correlation in a degenerate electron
+  gas.
+\newblock \emph{Phys. Rev.}, 112:\penalty0 812--827, Nov 1958.
+\newblock \doi{10.1103/PhysRev.112.812}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.112.812}.
+
+\bibitem[Ritchie(1959)]{RitchieQuasiparticleLifetimes}
+R.~H. Ritchie.
+\newblock Interaction of charged particles with a degenerate fermi-dirac
+  electron gas.
+\newblock \emph{Phys. Rev.}, 114:\penalty0 644--654, May 1959.
+\newblock \doi{10.1103/PhysRev.114.644}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.114.644}.
+
+\bibitem[Quinn(1962)]{Quinn1962}
+John~J. Quinn.
+\newblock Range of excited electrons in metals.
+\newblock \emph{Phys. Rev.}, 126:\penalty0 1453--1457, May 1962.
+\newblock \doi{10.1103/PhysRev.126.1453}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.126.1453}.
+
+\bibitem[Lundqvist(1969)]{Lundqvist}
+B.~I. Lundqvist.
+\newblock Some numerical results on quasiparticle properties in the electron
+  gas.
+\newblock \emph{Phys. Status. Solidi.}, 32:\penalty0 273, 1969.
+
+\bibitem[Abramowitz and Stegun(1964)]{abramowitzstegun72}
+M.~Abramowitz and I.A. Stegun.
+\newblock \emph{Handbook of mathematical functions with formulas, graphs, and
+  mathematical tables}.
+\newblock Number v. 55, no. 1972 in Applied mathematics series. U.S. Govt.
+  Print. Off., 1964.
+\newblock ISBN 9780486612720.
+\newblock URL \url{http://books.google.ie/books?id=MtU8uP7XMvoC}.
+
+\bibitem[Ridley(1999)]{RID99}
+B.~K. Ridley.
+\newblock \emph{Quantum processes in semiconductors}.
+\newblock Clarendon Press, Oxford, 4th edition, 1999.
+
+\bibitem[Delves(1959)]{Delves1959}
+R~T Delves.
+\newblock Theoretical transport coefficients for polar semiconductors.
+\newblock \emph{Proceedings of the Physical Society}, 73\penalty0 (4):\penalty0
+  572, 1959.
+\newblock URL \url{http://stacks.iop.org/0370-1328/73/i=4/a=305}.
+
+\bibitem[Fletcher and Butcher(1972)]{Fletcher-Butcher}
+K~Fletcher and P~N Butcher.
+\newblock An exact solution of the linearized boltzmann equation with
+  applications to the hall mobility and hall factor of n-gaas.
+\newblock \emph{Journal of Physics C: Solid State Physics}, 5\penalty0
+  (2):\penalty0 212, 1972.
+\newblock URL \url{http://stacks.iop.org/0022-3719/5/i=2/a=010}.
+
+\bibitem[Dirac(1927)]{Dirac-fermi-golden-rule1927}
+P.~A.~M. Dirac.
+\newblock The quantum theory of the emission and absorption of radiation.
+\newblock \emph{Proceedings of the Royal Society of London. Series A,
+  Containing Papers of a Mathematical and Physical Character}, 114\penalty0
+  (767):\penalty0 pp. 243--265, 1927.
+\newblock ISSN 09501207.
+\newblock URL \url{http://www.jstor.org/stable/94746}.
+
+\bibitem[Ridley(1998)]{Ridleyladdermethod}
+B~K Ridley.
+\newblock Polar-optical-phonon and electron-electron scattering in
+  large-bandgap semiconductors.
+\newblock \emph{Journal of Physics: Condensed Matter}, 10\penalty0
+  (30):\penalty0 6717, 1998.
+\newblock URL \url{http://stacks.iop.org/0953-8984/10/i=30/a=011}.
+
+\bibitem[Vaughan(2011)]{Martinscode}
+Martin~P Vaughan.
+\newblock Inelastic scattering.
+\newblock Numerical code and documentation from private communication, December
+  2011.
+
+\end{thebibliography}

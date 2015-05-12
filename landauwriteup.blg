@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: landauwriteup.aux
+The style file: unsrtnat.bst
+Illegal, another \bibstyle command---line 395 of file landauwriteup.aux
+ : \bibstyle
+ :          {ieeetr}
+I'm skipping whatever remains of this command
+Database file #1: landaurefs.bib
+Database file #2: references.bib
+Repeated entry---line 955 of file references.bib
+ : @article{Dirac-fermi-golden-rule1927
+ :                                     ,
+I'm skipping whatever remains of this entry
+Warning--empty year in gslsite
+Warning--empty year in Faddeevapackage
+You've used 27 entries,
+            2488 wiz_defined-function locations,
+            775 strings with 9169 characters,
+and the built_in function-call counts, 8797 in all, are:
+= -- 829
+> -- 267
+< -- 25
++ -- 128
+- -- 74
+* -- 592
+:= -- 1405
+add.period$ -- 112
+call.type$ -- 27
+change.case$ -- 46
+chr.to.int$ -- 27
+cite$ -- 31
+duplicate$ -- 489
+empty$ -- 876
+format.name$ -- 117
+if$ -- 1896
+int.to.chr$ -- 1
+int.to.str$ -- 28
+missing$ -- 31
+newline$ -- 171
+num.names$ -- 75
+pop$ -- 201
+preamble$ -- 1
+purify$ -- 27
+quote$ -- 0
+skip$ -- 286
+stack$ -- 0
+substring$ -- 329
+swap$ -- 60
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 165
+warning$ -- 2
+while$ -- 71
+width$ -- 0
+write$ -- 407
+(There were 2 error messages)
