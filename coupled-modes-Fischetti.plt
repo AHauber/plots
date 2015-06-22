@@ -120,13 +120,13 @@ set rrange [ * : * ] noreverse nowriteback
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Wave vector k/k_F" 
+set xlabel "Wave vector $k/k_F$" 
 set xlabel  font "" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ * : 1.00000 ] noreverse nowriteback
 set x2range [ * : * ] noreverse nowriteback
-set ylabel "Energy/E_F" 
+set ylabel "Energy $E/E_F$" 
 set ylabel  font "" textcolor lt -1 rotate by -270
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate by -270
@@ -170,12 +170,13 @@ wlo = 1.06
 wp = 1.2
 wm = 0.78
 wto = 0.97
-plot [0:] x*(x+2) w l lc 7 t "E/E_F = k/k_F (k/k_F +2)",\
- wlo dt 2 lc 1,\
- wto w l dt 3 lc 2 t "w_{TO} =w_P",\
-wp dt 4 lc 5,\
-wm w l dt 5 lc 4,\
- (wp >=x*(x+2))?wp:wlo w d  lw 3 lc 3 t "" ,\
- (wp >=x*(x+2))?wp:wlo w l  lw 1 lc 3 dt 2 t "" ,\
-(x<sqrt(wm+1)-1)?wm:1/0 w l lw 3 lc 6 t ""
+plot [0:] x*(x+2) w l lc 7 t "$E/E_F = k/k_F (k/k_F +2)$",\
+wlo dt 2 lc 1 lw 3,\
+wto dt 3 lc 2 lw 3 t "$w_{TO} =w_P$",\
+wp w l dt 4 lc 5 lw 3,\
+wm w l dt 5 lc 4 lw 3,\
+ (wp >=x*(x+2))?wp:wlo w d lw 4 lc 3 t "" ,\
+ (wp >=x*(x+2))?wp:wlo w l lw 3 lc 3 dt 4 t "" ,\
+(x<sqrt(wp+1)-1)?wm:1/0 w l lw 4 lc 6 t ""
 #    EOF
+#(x<sqrt(wm+1)-1)?wm:1/0 w l lw 4 lc 6 t ""

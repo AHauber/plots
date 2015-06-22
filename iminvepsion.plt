@@ -10,8 +10,12 @@
 #    	gnuplot home:     http://www.gnuplot.info
 #    	faq, bugs, etc:   type "help FAQ"
 #    	immediate help:   type "help"  (plot window: hit 'h')
-# set terminal qt 0 font "Sans,9"
-# set output
+# set terminal epslatex    leveldefault monochrome blacktext \
+   dashlength 1.0 linewidth 2.0 butt noclip \
+   nobackground \
+   palfuncparam 2000,0.003 \
+   input "" 12  fontscale 1.0 
+# set output 'iminvepsion2.tex'
 unset clip points
 set clip one
 unset clip two
@@ -42,7 +46,7 @@ set raxis
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key title ""
 set key inside right top vertical Right noreverse enhanced autotitle nobox
-set key noinvert samplen 4 spacing 1 width 0 height 0 
+set key noinvert samplen 4 spacing 1.5 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
 unset label
@@ -162,6 +166,7 @@ set style boxplot candles range  1.50 outliers pt 7 separation 1 labels auto uns
 set loadpath 
 set fontpath 
 set psdir
+set key spacing 1.5
 set fit brief errorvariables nocovariancevariables errorscaling prescale nowrap v5
 im(x,y) = x*y* (1-wt**2)/((1-x**2)**2 +x**2*y**2)
 g(i) = sprintf("%f" ,0.00064 * 10**i)
@@ -175,5 +180,10 @@ GPFUN_g = "g(i) = sprintf(\"%f\" ,0.00064 * 10**i)"
 GPFUN_h = "h(i) = sprintf(\"%f\" ,0.00064 * i)"
 i = 3
 x = 0.0
-plot im(x,g(1)) w l lw 2 t "g =0.0064", im(x,g(2)) w l dt 2 t "g=0.064", im(x,g(0)) w l dt 3  t "g=0.00064", im(x,h(50)) w l dt 4 t "g=0.032", im(x,h(5)) w l dt 5 t "g=0.0032", im(x,g(1)) w l lc 1 lw 2 t ""
+plot im(x,g(1)) w l lw 2 t "g =0.0064",\
+ im(x,g(2)) w l dt 2 lw 2  t "g=0.064",\
+ im(x,h(50)) w l dt 4 lw 2 t "g=0.032",\
+ im(x,h(5)) w l dt 5 lw 2 t "g=0.0032",\
+ im(x,g(0)) w l dt 3 lw 2  t "g=0.00064",\
+im(x,g(1)) w l lc 1 lw 2 t ""
 #    EOF
