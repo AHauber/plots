@@ -1,4 +1,4 @@
-#!/local/ahauber/bin/gnuplot -persist
+#!/sfihome/anna.hauber/bin/gnuplot -persist
 #
 #    
 #    	G N U P L O T
@@ -10,7 +10,7 @@
 #    	gnuplot home:     http://www.gnuplot.info
 #    	faq, bugs, etc:   type "help FAQ"
 #    	immediate help:   type "help"  (plot window: hit 'h')
-# set terminal qt 0 font "Sans,9"
+# set terminal x11 
 # set output
 unset clip points
 set clip one
@@ -41,8 +41,8 @@ unset grid
 set raxis
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key title ""
-set key inside right top vertical Right noreverse enhanced autotitle nobox
-set key noinvert samplen 4 spacing 1 width 0 height 0 
+set key inside right top horizontal Right noreverse enhanced autotitle nobox
+set key noinvert samplen 4 spacing 1.2 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
 unset label
@@ -62,7 +62,7 @@ unset polar
 unset parametric
 unset decimalsign
 set view 60, 30, 1, 1
-set samples 4001, 4001
+set samples 100, 100
 set isosamples 10, 10
 set surface 
 unset contour
@@ -93,9 +93,9 @@ set my2tics default
 set mcbtics default
 set mrtics default
 set xtics border in scale 1,0.5 mirror norotate  autojustify
-set xtics 0.5 norangelimit
+set xtics autofreq  norangelimit
 set ytics border in scale 1,0.5 mirror norotate  autojustify
-set ytics 1 norangelimit
+set ytics 0.5 norangelimit
 set ztics border in scale 1,0.5 nomirror norotate  autojustify
 set ztics autofreq  norangelimit
 unset x2tics
@@ -120,17 +120,17 @@ set rrange [ * : * ] noreverse nowriteback
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Wave vector $k/k_F$" 
+set xlabel "Energy $E/E_F$" 
 set xlabel  font "" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
-set xrange [ * : 1.00000 ] noreverse nowriteback
+set xrange [ * : 25.0000 ] noreverse nowriteback
 set x2range [ * : * ] noreverse nowriteback
-set ylabel "Energy $E/E_F$" 
+set ylabel "Momentum relaxation time $\\tau ~ (10^{12} s)$" 
 set ylabel  font "" textcolor lt -1 rotate by -270
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate by -270
-set yrange [ * : 2.00000 ] noreverse nowriteback
+set yrange [ * : 1.30000 ] noreverse nowriteback
 set y2range [ * : * ] noreverse nowriteback
 set zlabel "" 
 set zlabel  font "" textcolor lt -1 norotate
@@ -150,7 +150,7 @@ set lmargin  -1
 set bmargin  -1
 set rmargin  -1
 set tmargin  -1
-set locale "en_IE"
+set locale "en_US.iso885915"
 set pm3d explicit at s
 set pm3d scansautomatic
 set pm3d interpolate 1,1 flush begin noftriangles noborder corners2color mean
@@ -163,20 +163,17 @@ set loadpath
 set fontpath 
 set psdir
 set fit brief errorvariables nocovariancevariables errorscaling prescale nowrap v5
-GNUTERM = "qt"
+GNUTERM = "x11"
 ARGC = 0
 ARG0 = ""
-wlo = 1.06
-wp = 1.2
-wm = 0.78
-wto = 0.97
-plot [0:] x*(x+2) w l lc 7 t "$E/E_F = k/k_F (k/k_F +2)$",\
-wlo dt 2 lc 1 lw 3 t "$\\omega_{LO}$",\
-wto dt 3 lc 2 lw 3 t "$\\omega_{TO} =\\omega_P$",\
-wp w l dt 4 lc 5 lw 3 t "$\\omega_+$",\
-wm w l dt 5 lc 4 lw 3 t "$\\omega_-$",\
- (wm >=x*(x+2))?wp:wlo w d lw 4 lc 3 t "" ,\
- (wm >=x*(x+2))?wp:wlo w l lw 3 lc 3 dt 4 t "" ,\
-(x<sqrt(wm+1)-1)?wm:1/0 w l lw 4 lc 6 t ""
+i = 60
+x = 0.0
+kf = 2455446.0
+ef = 0.034285
+hbar = 6.58211899e-16
+## Last datafile plotted: "tau_final.dat"
+plot 'tau_0.dat' u ($1**2):($2*1e12) w l lw 3 t "$\\tau_{initial}$",\
+	for [i=1:5:1] 'z_'.i.'.dat' u ($1**2/kf**2):($2*hbar/2/ef*1e12) w l dt 2 t "$\\tau_{".i."}$",\
+	for [i=10:60:10] 'z_'.i.'.dat' u ($1**2/kf**2):($2*hbar/2/ef*1e12) w l  dt 1  t "$\\tau_{".i."}$",\
+ 'tau_final.dat' u ($1**2):($2*1e12) w l lw 3 t "$\\tau_{final}$"
 #    EOF
-#(x<sqrt(wm+1)-1)?wm:1/0 w l lw 4 lc 6 t ""

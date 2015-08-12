@@ -1,7 +1,5 @@
 % GNUPLOT: LaTeX picture with Postscript
 \begingroup
-  \fontfamily{Times}%
-  \selectfont
   \makeatletter
   \providecommand\color[2][]{%
     \GenericError{(gnuplot) \space\space\space\@spaces}{%
@@ -81,49 +79,54 @@
     \fi%
     \setlength{\fboxrule}{0.5pt}%
     \setlength{\fboxsep}{1pt}%
-\begin{picture}(4520.00,3400.00)%
+%\begin{picture}(4520.00,3400.00)%
+\begin{picture}(4520.00,3300.00)%
     \gplgaddtomacro\gplbacktext{%
       \csname LTb\endcsname%
-      \put(459,940){\makebox(0,0)[r]{\strut{}$0$}}%
+      \put(645,781){\makebox(0,0)[r]{\strut{}$0$}}%
       \csname LTb\endcsname%
-      \put(459,2076){\makebox(0,0)[r]{\strut{}$1$}}%
+      \put(645,2185){\makebox(0,0)[r]{\strut{}$0.5$}}%
       \csname LTb\endcsname%
-      \put(459,3211){\makebox(0,0)[r]{\strut{}$2$}}%
+      \put(747,595){\makebox(0,0){\strut{}$0$}}%
       \csname LTb\endcsname%
-      \put(553,716){\makebox(0,0){\strut{}$0$}}%
+      \put(1590,595){\makebox(0,0){\strut{}$25$}}%
       \csname LTb\endcsname%
-      \put(2339,716){\makebox(0,0){\strut{}$0.5$}}%
+      \put(2434,595){\makebox(0,0){\strut{}$50$}}%
       \csname LTb\endcsname%
-      \put(4125,716){\makebox(0,0){\strut{}$1$}}%
+      \put(3277,595){\makebox(0,0){\strut{}$75$}}%
+      \csname LTb\endcsname%
+      \put(4120,595){\makebox(0,0){\strut{}$100$}}%
+      \csname LTb\endcsname%
+      \put(1514,3213){\makebox(0,0){\strut{}$E = \hbar\omega_{LO}$}}%
     }%
     \gplgaddtomacro\gplfronttext{%
       \csname LTb\endcsname%
-      \put(159,2075){\rotatebox{-270}{\makebox(0,0){\strut{}Energy $E/E_F$}}}%
+     %     \put(144,1904){\rotatebox{-270}{\makebox(0,0){\strut{}Momentum relaxation time $\tau ~ (10^{-12} s)$}}}%
       \csname LTb\endcsname%
-      \put(4348,2075){\rotatebox{-270}{\makebox(0,0){\strut{}}}}%
+      \put(4305,1904){\rotatebox{-270}{\makebox(0,0){\strut{}}}}%
       \csname LTb\endcsname%
-      \put(2339,380){\makebox(0,0){\strut{}Wave vector $k/k_F$}}%
+      \put(2433,316){\makebox(0,0){\strut{}Energy $E/E_F$}}%
       \csname LTb\endcsname%
-      \put(2339,3099){\makebox(0,0){\strut{}}}%
+      \put(2433,3120){\makebox(0,0){\strut{}}}%
       \csname LTb\endcsname%
-      \put(2339,3098){\makebox(0,0){\strut{}}}%
+      \put(2433,3119){\makebox(0,0){\strut{}}}%
       \csname LTb\endcsname%
-      \put(271,112){\makebox(0,0)[l]{\strut{}}}%
+      \put(237,93){\makebox(0,0)[l]{\strut{}}}%
       \csname LTb\endcsname%
-      \put(2717,3010){\makebox(0,0){\strut{}}}%
+      \put(3522,2842){\makebox(0,0){\strut{}}}%
       \csname LTb\endcsname%
-      \put(3378,3010){\makebox(0,0)[r]{\strut{}$E/E_F = k/k_F (k/k_F +2)$}}%
+      \put(3332,2841){\makebox(0,0)[r]{\strut{}$\tau^{10}$}}%
       \csname LTb\endcsname%
-      \put(3378,2786){\makebox(0,0)[r]{\strut{}wlo}}%
+      \put(3332,2618){\makebox(0,0)[r]{\strut{}$\tau^{20}$}}%
       \csname LTb\endcsname%
-      \put(3378,2562){\makebox(0,0)[r]{\strut{}$w_{TO} =w_P$}}%
+      \put(3332,2395){\makebox(0,0)[r]{\strut{}$\tau^{30}$}}%
       \csname LTb\endcsname%
-      \put(3378,2338){\makebox(0,0)[r]{\strut{}wp}}%
+      \put(3332,2172){\makebox(0,0)[r]{\strut{}$\tau^{40}$}}%
       \csname LTb\endcsname%
-      \put(3378,2114){\makebox(0,0)[r]{\strut{}wm}}%
+      \put(3332,1949){\makebox(0,0)[r]{\strut{}$\tau^{50}$}}%
     }%
     \gplbacktext
-    \put(0,0){\includegraphics{coupled-modes-Fischetti3}}%
+    \put(0,0){\includegraphics{iteration-n5e15}}%
     \gplfronttext
   \end{picture}%
 \endgroup

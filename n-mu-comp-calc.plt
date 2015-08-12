@@ -1,4 +1,4 @@
-#!/local/ahauber/bin/gnuplot -persist
+#!/sfihome/anna.hauber/bin/gnuplot -persist
 #
 #    
 #    	G N U P L O T
@@ -10,7 +10,7 @@
 #    	gnuplot home:     http://www.gnuplot.info
 #    	faq, bugs, etc:   type "help FAQ"
 #    	immediate help:   type "help"  (plot window: hit 'h')
-# set terminal qt 0 font "Sans,9"
+# set terminal x11 
 # set output
 unset clip points
 set clip one
@@ -28,12 +28,12 @@ set style rectangle back fc  bgnd fillstyle   solid 1.00 border lt -1
 set style circle radius graph 0.02, first 0.00000, 0.00000 
 set style ellipse size graph 0.05, 0.03, first 0.00000 angle 0 units xy
 set dummy x, y
-set format x "% h" 
-set format y "% h" 
-set format x2 "% h" 
-set format y2 "% h" 
-set format z "% h" 
-set format cb "% h" 
+set format x "$10^{%T}$" 
+set format y "$10^%T$" 
+set format x2 "% g" 
+set format y2 "% g" 
+set format z "% g" 
+set format cb "% g" 
 set format r "% h" 
 set timefmt "%d/%m/%y,%H:%M"
 set angles radians
@@ -41,9 +41,9 @@ unset grid
 set raxis
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key title ""
-set key inside right top vertical Right noreverse enhanced autotitle nobox
+set key inside left top horizontal Left reverse enhanced autotitle nobox
 set key noinvert samplen 4 spacing 1 width 0 height 0 
-set key maxcolumns 0 maxrows 0
+set key maxcolumns 2 maxrows 0
 set key noopaque
 unset label
 unset arrow
@@ -54,6 +54,8 @@ set style histogram clustered gap 2 title textcolor lt -1
 unset object
 set style textbox transparent margins  1.0,  1.0 border
 unset logscale
+set logscale x 10
+set logscale y 10
 set offsets 0, 0, 0, 0
 set pointsize 1
 set pointintervalbox 1
@@ -62,7 +64,7 @@ unset polar
 unset parametric
 unset decimalsign
 set view 60, 30, 1, 1
-set samples 4001, 4001
+set samples 100, 100
 set isosamples 10, 10
 set surface 
 unset contour
@@ -78,11 +80,11 @@ set size ratio 0 1,1
 set origin 0,0
 set style data points
 set style function lines
-unset xzeroaxis
-unset yzeroaxis
+set xzeroaxis lt nodraw linewidth 1.000 dashtype solid
+set yzeroaxis lt nodraw linewidth 1.000 dashtype solid
 unset zzeroaxis
-unset x2zeroaxis
-unset y2zeroaxis
+set x2zeroaxis lt nodraw linewidth 1.000 dashtype solid
+set y2zeroaxis lt nodraw linewidth 1.000 dashtype solid
 set ticslevel 0.5
 set tics scale  1, 0.5, 1, 1, 1
 set mxtics default
@@ -93,9 +95,9 @@ set my2tics default
 set mcbtics default
 set mrtics default
 set xtics border in scale 1,0.5 mirror norotate  autojustify
-set xtics 0.5 norangelimit
+set xtics autofreq  norangelimit
 set ytics border in scale 1,0.5 mirror norotate  autojustify
-set ytics 1 norangelimit
+set ytics autofreq  norangelimit
 set ztics border in scale 1,0.5 nomirror norotate  autojustify
 set ztics autofreq  norangelimit
 unset x2tics
@@ -104,13 +106,20 @@ set cbtics border in scale 1,0.5 mirror norotate  autojustify
 set cbtics autofreq  norangelimit
 set rtics axis in scale 1,0.5 nomirror norotate  autojustify
 set rtics autofreq  norangelimit
-unset paxis 1 tics
-unset paxis 2 tics
-unset paxis 3 tics
-unset paxis 4 tics
-unset paxis 5 tics
-unset paxis 6 tics
-unset paxis 7 tics
+set paxis 1 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 1 tics autofreq  rangelimit
+set paxis 2 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 2 tics autofreq  rangelimit
+set paxis 3 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 3 tics autofreq  rangelimit
+set paxis 4 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 4 tics autofreq  rangelimit
+set paxis 5 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 5 tics autofreq  rangelimit
+set paxis 6 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 6 tics autofreq  rangelimit
+set paxis 7 tics border in scale 1,0.5 nomirror norotate  autojustify
+set paxis 7 tics autofreq  rangelimit
 set title "" 
 set title  font "" norotate
 set timestamp bottom 
@@ -120,17 +129,17 @@ set rrange [ * : * ] noreverse nowriteback
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Wave vector $k/k_F$" 
+set xlabel "Electron density n ($cm^{-3}$)" 
 set xlabel  font "" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
-set xrange [ * : 1.00000 ] noreverse nowriteback
+set xrange [ 5.00000e+14 : 5.00000e+19 ] noreverse nowriteback
 set x2range [ * : * ] noreverse nowriteback
-set ylabel "Energy $E/E_F$" 
+set ylabel "Mobility $\\mu$ ($\\frac{cm^2}{Vs}$)" 
 set ylabel  font "" textcolor lt -1 rotate by -270
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate by -270
-set yrange [ * : 2.00000 ] noreverse nowriteback
+set yrange [ 1000.00 : 100000. ] noreverse nowriteback
 set y2range [ * : * ] noreverse nowriteback
 set zlabel "" 
 set zlabel  font "" textcolor lt -1 norotate
@@ -150,33 +159,28 @@ set lmargin  -1
 set bmargin  -1
 set rmargin  -1
 set tmargin  -1
-set locale "en_IE"
+set locale "C"
 set pm3d explicit at s
 set pm3d scansautomatic
 set pm3d interpolate 1,1 flush begin noftriangles noborder corners2color mean
 set palette positive nops_allcF maxcolors 0 gamma 1.5 color model RGB 
 set palette rgbformulae 7, 5, 15
 set colorbox default
-set colorbox vertical origin screen 0.9, 0.2, 0 size screen 0.05, 0.6, 0 front bdefault
+set colorbox vertical origin screen 0.9, 0.2, 0 size screen 0.1, 0.63, 0 front bdefault
 set style boxplot candles range  1.50 outliers pt 7 separation 1 labels auto unsorted
 set loadpath 
 set fontpath 
 set psdir
-set fit brief errorvariables nocovariancevariables errorscaling prescale nowrap v5
-GNUTERM = "qt"
+set fit brief noerrorvariables nocovariancevariables errorscaling prescale nowrap v5
+GNUTERM = "x11"
 ARGC = 0
 ARG0 = ""
-wlo = 1.06
-wp = 1.2
-wm = 0.78
-wto = 0.97
-plot [0:] x*(x+2) w l lc 7 t "$E/E_F = k/k_F (k/k_F +2)$",\
-wlo dt 2 lc 1 lw 3 t "$\\omega_{LO}$",\
-wto dt 3 lc 2 lw 3 t "$\\omega_{TO} =\\omega_P$",\
-wp w l dt 4 lc 5 lw 3 t "$\\omega_+$",\
-wm w l dt 5 lc 4 lw 3 t "$\\omega_-$",\
- (wm >=x*(x+2))?wp:wlo w d lw 4 lc 3 t "" ,\
- (wm >=x*(x+2))?wp:wlo w l lw 3 lc 3 dt 4 t "" ,\
-(x<sqrt(wm+1)-1)?wm:1/0 w l lw 4 lc 6 t ""
+x = 0.0
+## Last datafile plotted: "n-mu-GaAs-Moore-theory.csv"
+plot \
+	'~/WORK/30-6-15/n-varied/variable-mu.dat' u 1:(1/(1/$5+1/$6)) w lp lw 2  t "$\\mu_{tot}$",\
+	'~/WORK/30-6-15/n-varied/variable-mu.dat' u 1:5 w lp lw 2 t "$\\mu_{CC}$",\
+	'~/WORK/30-6-15/n-varied/variable-mu.dat' u 1:6 w lp lw 2 t "$\\mu_{CI}$",\
+	'~/WORK/30-6-15/n-varied-LO/variable-mu.dat' u 1:5 w l t "$\\mu_{LO}$",\
+	'~/WORK/30-6-15/n-varied-LO/variable-mu.dat' u 1:(1/(1/$6+1/$5)) w l t "$\\mu_{LO + CI}$"
 #    EOF
-#(x<sqrt(wm+1)-1)?wm:1/0 w l lw 4 lc 6 t ""
